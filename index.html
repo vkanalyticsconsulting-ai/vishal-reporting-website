@@ -1,74 +1,68 @@
-
-
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VK Analytics Consulting | Premium Reporting Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#0f172a;color:#f1f5f9}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#020617;position:sticky;top:0;z-index:1000}
-header h1{color:#38bdf8}
-nav a{color:#cbd5e1;margin-left:25px;text-decoration:none}
-nav a:hover{color:#38bdf8}
-.hero{padding:120px 10%;text-align:center;background:linear-gradient(135deg,#0f172a,#1e293b)}
-.hero h2{font-size:42px;margin-bottom:20px}
-.hero p{color:#94a3b8;margin-bottom:30px}
-.section{padding:80px 10%}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
-.card{background:#1e293b;padding:30px;border-radius:15px;transition:0.4s;text-decoration:none;color:white;display:block}
-.card:hover{transform:translateY(-10px);background:#334155}
-footer{text-align:center;padding:30px;background:#020617;color:#64748b}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;text-decoration:none;font-size:18px}
-</style>
-</head>
-<body>
-
-<header>
-<h1>VK Analytics Consulting</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
-
-<section class="hero">
-<h2>Premium Reporting & Dashboard Solutions</h2>
-<p>7+ Years Expertise in Excel, Power BI & Looker Studio Reporting</p>
-</section>
-
-<section class="section">
-<h2 style="text-align:center;margin-bottom:40px">Core Services</h2>
-<div class="services">
-
-<a href="excel.html" class="card">
-<h3>Advanced Excel Automation</h3>
-<p>VBA, Power Query, MIS & Financial Reporting Systems</p>
-</a>
-
-<a href="powerbi.html" class="card">
-<h3>Power BI Dashboards</h3>
-<p>Interactive KPI dashboards with DAX & Data Modeling</p>
-</a>
-
-<a href="looker.html" class="card">
+<h3>Advanced Excel Systems</h3>
+<p>Automation, MIS dashboards, financial modeling & VBA systems.</p>
+</div>
+<div class="card">
+<h3>Power BI Intelligence</h3>
+<p>Executive KPI dashboards with advanced DAX modeling.</p>
+</div>
+<div class="card">
 <h3>Looker Studio</h3>
-<p>Marketing & Revenue dashboards with GA4 integration</p>
-</a>
-
-<a href="revenue.html" class="card">
+<p>Marketing & revenue dashboards integrated with GA4 & Ads.</p>
+</div>
+<div class="card">
 <h3>Revenue Analytics</h3>
-<p>AdTech margin analysis & reconciliation systems</p>
-</a>
-
+<p>AdTech margin tracking & reconciliation solutions.</p>
+</div>
 </div>
 </section>
 
-<footer>© 2026 VK Analytics Consulting</footer>
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+<section id="work" class="reveal">
+<h2 style="font-size:36px;font-family:'Playfair Display',serif">Dashboard Templates</h2>
+<div class="gallery">
+<img src="excel1.png">
+<img src="powerbi1.png">
+<img src="looker1.png">
+<img src="revenue1.png">
+</div>
+</section>
+
+<section id="contact" class="reveal">
+<h2 style="font-size:36px;font-family:'Playfair Display',serif;text-align:center">Start Your Project</h2>
+<div class="contact-box">
+
+<!-- Replace action link with your Formspree link -->
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Project Details" required></textarea>
+<button type="submit">Submit Inquiry</button>
+</form>
+
+<p style="margin-top:20px;text-align:center">vk.analytics.consulting@gmail.com</p>
+</div>
+</section>
+
+<footer>
+© 2026 VK Analytics Consulting | Premium Data Consulting
+</footer>
+
+<a href="https://wa.me/919773881782" class="whatsapp">💬</a>
+
+<script>
+function reveal() {
+ var reveals = document.querySelectorAll(".reveal");
+ for (var i = 0; i < reveals.length; i++) {
+  var windowHeight = window.innerHeight;
+  var elementTop = reveals[i].getBoundingClientRect().top;
+  var elementVisible = 100;
+  if (elementTop < windowHeight - elementVisible) {
+   reveals[i].classList.add("active");
+  }
+ }
+}
+window.addEventListener("scroll", reveal);
+</script>
 
 </body>
 </html>
-
