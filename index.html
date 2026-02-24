@@ -1,87 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishal Kadam | Reporting & Dashboard Consultant</title>
-<style>
-body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f4f6f9; color:#333;}
-header {background:#0f172a; color:white; padding:60px 20px; text-align:center;}
-header h1 {margin:0; font-size:36px;}
-header p {font-size:18px; margin-top:10px;}
-section {padding:50px 20px; max-width:1000px; margin:auto;}
-h2 {color:#0f172a; margin-bottom:20px;}
-.services {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
-.card {background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.05);} 
-.btn {display:inline-block; padding:12px 20px; background:#2563eb; color:white; text-decoration:none; border-radius:6px; margin-top:15px;}
-footer {background:#0f172a; color:white; text-align:center; padding:20px;}
-.contact-box {background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.05);} 
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:#0f172a;color:#f1f5f9}
+        header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#020617}
+        header h1{color:#38bdf8;font-size:22px}
+        nav a{color:#cbd5e1;margin-left:25px;text-decoration:none;font-size:14px}
+        nav a:hover{color:#38bdf8}
+        .hero{padding:120px 10%;text-align:center;background:linear-gradient(135deg,#0f172a,#1e293b)}
+        .hero h2{font-size:40px;margin-bottom:20px}
+        .hero p{color:#94a3b8;max-width:600px;margin:0 auto 30px}
+        .btn{padding:12px 28px;background:#38bdf8;color:#0f172a;border:none;border-radius:30px;font-weight:600;text-decoration:none}
+        .btn:hover{background:#0ea5e9}
+        .section{padding:80px 10%}
+        .section h3{text-align:center;font-size:28px;margin-bottom:40px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+        .card{background:#1e293b;padding:30px;border-radius:15px;transition:0.3s}
+        .card:hover{transform:translateY(-5px);background:#334155}
+        footer{text-align:center;padding:30px;background:#020617;color:#64748b;font-size:14px}
+    </style>
 </head>
 <body>
-
 <header>
-<h1>Vishal Kadam</h1>
-<p>Excel Reporting | Dashboard Development | Business Intelligence Solutions</p>
-<a href="#contact" class="btn">Get Free Consultation</a>
+    <h1>VK Analytics Consulting</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
-
-<section>
-<h2>About Me</h2>
-<p>I am a Reporting & Dashboard Consultant with 7+ years of experience helping businesses make better decisions through structured data and clear insights. I specialize in Excel automation, Looker Studio dashboards, and Power BI reporting solutions for companies across India.</p>
+<section class="hero">
+    <h2>Premium Reporting & Dashboard Solutions</h2>
+    <p>7+ Years of expertise in Excel Automation, Power BI & Looker dashboards for data-driven businesses.</p>
+    <a href="contact.html" class="btn">Work With Me</a>
 </section>
-
-<section>
-<h2>Services</h2>
-<div class="services">
-<div class="card">
-<h3>Excel Reporting & Automation</h3>
-<p>Advanced Excel dashboards, automated reports, reconciliation sheets, pivot analysis, and KPI tracking systems.</p>
-</div>
-<div class="card">
-<h3>Looker Studio Dashboards</h3>
-<p>Interactive dashboards for revenue, marketing, sales, and operations with automated data connections.</p>
-</div>
-<div class="card">
-<h3>Power BI Solutions</h3>
-<p>Professional BI dashboards with data modeling, DAX measures, and visual analytics for decision-making.</p>
-</div>
-<div class="card">
-<h3>Custom Reporting Solutions</h3>
-<p>Tailored reporting systems based on your business needs with clear insights and performance tracking.</p>
-</div>
-</div>
+<section class="section">
+    <h3>Core Services</h3>
+    <div class="grid">
+        <div class="card"><h4>Excel Automation</h4><p>Advanced formulas, VBA & reporting automation.</p></div>
+        <div class="card"><h4>Power BI Dashboards</h4><p>Executive KPI dashboards & business intelligence.</p></div>
+        <div class="card"><h4>Looker Studio</h4><p>Marketing & revenue performance tracking.</p></div>
+        <div class="card"><h4>Revenue Analytics</h4><p>AdTech margin analysis & discrepancy audits.</p></div>
+    </div>
 </section>
-
-<section>
-<h2>Why Choose Me</h2>
-<ul>
-<li>7+ Years Experience in Reporting & Analytics</li>
-<li>Business-Focused Insights, Not Just Data</li>
-<li>Clean, Professional Dashboard Design</li>
-<li>Quick Turnaround & Reliable Communication</li>
-<li>India-Based Consultant with Global Standards</li>
-</ul>
-</section>
-
-<section>
-<h2>Tools & Expertise</h2>
-<p>Microsoft Excel | Looker Studio | Power BI | Data Cleaning | KPI Design | Automation | Revenue Reporting | Business Analytics</p>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<div class="contact-box">
-<p><strong>Email:</strong> yourbusiness@email.com</p>
-<p><strong>Location:</strong> India</p>
-<p>Contact me for a free consultation and let’s build a reporting system that helps your business grow.</p>
-<a href="mailto:yourbusiness@email.com" class="btn">Email Me</a>
-</div>
-</section>
-
-<footer>
-<p>© 2026 Vishal Kadam | Reporting & Dashboard Consultant</p>
-</footer>
-
+<footer>© 2026 VK Analytics Consulting | India</footer>
 </body>
 </html>
