@@ -1,49 +1,74 @@
-<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Analytics Consulting | Premium Reporting Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#f1f5f9}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#020617;position:sticky;top:0;z-index:1000}
+header h1{color:#38bdf8}
+nav a{color:#cbd5e1;margin-left:25px;text-decoration:none}
+nav a:hover{color:#38bdf8}
+.hero{padding:120px 10%;text-align:center;background:linear-gradient(135deg,#0f172a,#1e293b)}
+.hero h2{font-size:42px;margin-bottom:20px}
+.hero p{color:#94a3b8;margin-bottom:30px}
+.section{padding:80px 10%}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.card{background:#1e293b;padding:30px;border-radius:15px;transition:0.4s;text-decoration:none;color:white;display:block}
+.card:hover{transform:translateY(-10px);background:#334155}
+footer{text-align:center;padding:30px;background:#020617;color:#64748b}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;text-decoration:none;font-size:18px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>VK Analytics Consulting</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h2>Executive Dashboards That Drive Decisions</h2>
-<p>Premium Excel, Power BI & Looker Studio dashboards for data-driven companies.</p>
-<a href="templates.html" class="btn">View Templates</a>
+<h2>Premium Reporting & Dashboard Solutions</h2>
+<p>7+ Years Expertise in Excel, Power BI & Looker Studio Reporting</p>
 </section>
 
-<section class="section reveal">
-<h2 style="text-align:center;margin-bottom:40px">Pricing Plans</h2>
-<div class="pricing-grid">
-<div class="price-card">
-<h3>Starter</h3>
-<p>₹7,999</p>
-<p>Basic Excel Dashboard</p>
-</div>
-<div class="price-card">
-<h3>Professional</h3>
-<p>₹18,999</p>
-<p>Power BI / Looker Dashboard</p>
-</div>
-<div class="price-card">
-<h3>Enterprise</h3>
-<p>Custom Quote</p>
-<p>Full Automation + Consulting</p>
-</div>
+<section class="section">
+<h2 style="text-align:center;margin-bottom:40px">Core Services</h2>
+<div class="services">
+
+<a href="excel.html" class="card">
+<h3>Advanced Excel Automation</h3>
+<p>VBA, Power Query, MIS & Financial Reporting Systems</p>
+</a>
+
+<a href="powerbi.html" class="card">
+<h3>Power BI Dashboards</h3>
+<p>Interactive KPI dashboards with DAX & Data Modeling</p>
+</a>
+
+<a href="looker.html" class="card">
+<h3>Looker Studio</h3>
+<p>Marketing & Revenue dashboards with GA4 integration</p>
+</a>
+
+<a href="revenue.html" class="card">
+<h3>Revenue Analytics</h3>
+<p>AdTech margin analysis & reconciliation systems</p>
+</a>
+
 </div>
 </section>
 
 <footer>© 2026 VK Analytics Consulting</footer>
-
 <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
-
-<script>
-window.addEventListener('scroll', function() {
-  document.querySelectorAll('.reveal').forEach(function(el) {
-    var windowHeight = window.innerHeight;
-    var elementTop = el.getBoundingClientRect().top;
-    if (elementTop < windowHeight - 100) {
-      el.classList.add('active');
-    }
-  });
-});
-</script>
 
 </body>
 </html>
+
